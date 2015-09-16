@@ -41,6 +41,8 @@ angular.module('ngcsas.core', [
             urlTemplate: '{part}/i18n/{lang}.json'
         });
 
+        $translateProvider.useSanitizeValueStrategy('escaped');
+
         tmhDynamicLocaleProvider.localeLocationPattern('bower_components/angular-i18n/angular-locale_{{locale}}.js');
 
         localStorageServiceProvider.setPrefix('ngcsas-');
