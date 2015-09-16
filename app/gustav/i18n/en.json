@@ -1,0 +1,12 @@
+{
+    "gustav.BYE": "Good bye and take care!",
+    "gustav.MENU_ITEM": "Home",
+    "gustav.NAME": "Name",
+    "gustav.ACCOUNTNUMBER": "Number",
+    "gustav.BALANCE": "Balance",
+    "gustav.TYPE":  "Type",
+    "gustav.ENVIRONMENT": "Environment",
+    "gustav.LOGIN":"Login",
+    "gustav.LOGOUT":"Logout",
+    "gustav.NO_PROFILE": "No user profile found."
+}

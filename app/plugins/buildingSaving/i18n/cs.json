@@ -1,0 +1,15 @@
+{
+    "buildingSaving.MENU_ITEM":"Stavební spoření",
+    "buildingSaving.NO_SAVING":"Nemáte žádné dostupné stavební spoření!",
+    "buildingSaving.BALANCE":"Zůstatek",
+    "buildingSaving.CREDIT_INTEREST_RATE":"Kreditní úroková sazba",
+    "buildingSaving.TARGET_AMOUNT":"Cílová částka",
+    "buildingSaving.AGREED_MONTHLY_SAVINGS":"Sjednané měsíční spoření",
+    "buildingSaving.BONUS_BEARING_DEPOSIT_TO_PAY":"Bonus bearing deposit to pay",
+    "buildingSaving.EXPIRY_DATE":"Datum konce",
+    "buildingSaving.DEBIT_INTEREST_RATE":"Debetní úroková sazba",
+    "buildingSaving.LOAN_AMOUNT":"Výše úvěru",
+    "buildingSaving.LOAN_INSTALLMENT":"Splátka úvěru",
+    "buildingSaving.ADDITIONAL_SAVINGS":"Dodatečné spoření",
+    "buildingSaving.PAYMENT_INSURANCE":"Pojištění úvěru"
+}

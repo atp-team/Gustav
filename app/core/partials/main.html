@@ -1,0 +1,21 @@
+<div class="jumbotron">
+    <h1>ngcsas.core</h1>
+    <p>Wellcome</p>
+    {{mainCtrl.title}}
+    {{formatDate(mainCtrl.now)}}
+    <p><a class="btn btn-primary btn-lg" href="#/page/1" role="button">Next</a></p>
+    <br>
+    {{utils}}
+    <br>
+    <auto-complete  selected-value="mainCtrl.selectedLocation"
+                    template-id="autoCompleteItem.html"
+                    look-up-method="mainCtrl.lookUpLocationMethod(value, resultCallBack, faultCallBack)"
+                    selected-item-handler="mainCtrl.selectedItemHandlerMethod(item)"></auto-complete>
+    <br>
+    <auto-complete  selected-value="mainCtrl.selectedOtherLocation"
+                    template-id="simpleAutoCompleteItem.html"
+                    look-up-method="mainCtrl.lookUpLocal(value, resultCallBack, faultCallBack)"
+                    selected-item-handler="mainCtrl.selectedLocalItem(item)"></auto-complete>
+    <br>
+    <alerts-list alerts="mainCtrl.alerts" add-alert></alerts-list>
+</div>

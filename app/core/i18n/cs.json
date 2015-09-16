@@ -1,0 +1,11 @@
+{
+    "core.ERROR_MESSAGE": "V aplikaci nastala chyba.",
+    "core.ROUTE_ERROR_MESSAGE": "Nepodařilo se načíst data.",
+    "Not Found":"Data nebo cesta k nim nenalezena",
+    "core.HELP_LOAD_MENU_ITEM": "Nahraj modul <b>Help</b>",
+    "core.menuItem1":"Položka menu 1",
+    "core.menuItem2":"Položka menu 2",
+    "core.menuItem3":"Položka menu 3",
+    "core.BUTTON_LANG_CS": "Česky",
+    "core.BUTTON_LANG_EN": "Anglicky"
+}

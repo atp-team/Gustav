@@ -1,0 +1,14 @@
+{
+    "history.MENU_ITEM": "Transactions",
+    "history.ACCOUNT": "Account",
+    "history.FROMDATE": "From",
+    "history.TODATE": "To",
+    "history.TAB_FROM": "From account",
+    "history.TAB_TO": "Account",
+    "history.TAB_AMOUNT": "Amount",
+    "history.TAB_PAYMENTDATE": "Date",
+    "history.TAB_NOTE": "Note",
+    "history.WAIT": "Moment, please...",
+    "history.NO_SHORT_HISTORY": "No recent transactions...",
+    "history.TAB_OPERATION": "Operation"
+}

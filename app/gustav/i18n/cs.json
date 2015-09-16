@@ -1,0 +1,12 @@
+{
+    "gustav.BYE": "Na shledanou, těším se příště!",
+    "gustav.MENU_ITEM": "Domů",
+    "gustav.NAME": "Název",
+    "gustav.ACCOUNTNUMBER": "Číslo",
+    "gustav.BALANCE": "Zůstatek",
+    "gustav.TYPE":  "Type",
+    "gustav.ENVIRONMENT": "Prostředí",
+    "gustav.LOGIN":"Přihlásit",
+    "gustav.LOGOUT":"Odhlásit",
+    "gustav.NO_PROFILE": "Nenalezen profil uživatele."
+}

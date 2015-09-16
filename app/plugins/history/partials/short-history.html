@@ -1,0 +1,28 @@
+<div class="panel panel-sm">
+    <div class="panel-body">
+        <table class="table table-condensed table-hover" ng-if="transactions && transactions.length > 0">
+            <tr ng-repeat="transaction in transactions|limitTo:3">
+                <td>
+                        <span class="glyphicon" ng-class="{'glyphicon-log-in': transaction.amount.value > 0,
+                        'glyphicon-log-out': transaction.amount.value < 0, 'glyphicon-unchecked': transaction.amount.value == 0}"></span>
+                </td>
+                <td><strong>{{transaction.description}}</strong><br>
+                        <span ng-if="transaction.accountParty.iban">
+                        {{transaction.accountParty.iban | IBANout}}
+                    </span>
+                </td>
+                <td class="text-right">{{transaction.amount | amount}}</td>
+                <td class="text-right">{{transaction.bookingDate | date : 'dd.MM.'}}</td>
+            </tr>
+        </table>
+        <p translate="history.NO_SHORT_HISTORY" ng-if="transactions && transactions.length === 0"></p>
+
+        <p translate="history.WAIT" ng-if="!transactions"></p>
+
+        <p>
+            <button class="btn btn-primary" ng-click="goto(account)"><span
+                    class="glyphicon glyphicon-share-alt"></span> {{'history.MENU_ITEM' | translate}}
+            </button>
+        </p>
+    </div>
+</div>

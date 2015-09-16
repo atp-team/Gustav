@@ -1,0 +1,5 @@
+<div class="row" ng-if="accounts">
+    <account-box ng-repeat-start="account in accounts" account="account"></account-box>
+    <!-- This is quite a hack - assures that box is not moved left <-> right when another box is opened -->
+    <div class="clearfix" ng-repeat-end ng-if="($index + 1) % 2 === 0"></div>
+</div>

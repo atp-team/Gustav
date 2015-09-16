@@ -1,0 +1,11 @@
+{
+    "core.ERROR_MESSAGE": "Oops, something went wrong.",
+    "core.ROUTE_ERROR_MESSAGE": "Could not load data.",
+    "Not Found":"Data or path not found.",
+    "core.HELP_LOAD_MENU_ITEM": "Load module <b>Help</b>",
+    "core.menuItem1":"Menu Item 1",
+    "core.menuItem2":"Menu Item 2",
+    "core.menuItem3":"Menu Item 3",
+    "core.BUTTON_LANG_CS": "Czech",
+    "core.BUTTON_LANG_EN": "English"
+}

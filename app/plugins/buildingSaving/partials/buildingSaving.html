@@ -1,0 +1,47 @@
+<div class="col-xs-12 col-sm-6" ng-init="hideDetail = true">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                {{buildingSaving.accountTypeI18N}}
+                <span class="pull-right">{{buildingSaving.alias}}</span>
+            </h3>
+        </div>
+
+        <!--
+
+        -->
+
+        <div class="panel-body">
+            <ul class="list-unstyled">
+                <li>{{'buildingSaving.BALANCE' | translate}}
+                    <span class="pull-right">
+                        <strong>{{buildingSaving.accountBalance | amount}}</strong>
+                    </span>
+                </li>
+                <li ng-if="buildingSaving.saving.targetAmount">{{'buildingSaving.TARGET_AMOUNT' | translate}}
+                    <span class="pull-right">
+                        {{buildingSaving.saving.targetAmount | amount}}
+                    </span>
+                </li>
+                <li ng-if="buildingSaving.agreedMonthlySavings">{{'buildingSaving.AGREED_MONTHLY_SAVINGS' | translate}}
+                    <span class="pull-right">
+                        {{buildingSaving.agreedMonthlySavings | amount}}
+                    </span>
+                </li>
+                <li ng-if="buildingSaving.saving.bonusBearingDepositToPay">{{'buildingSaving.BONUS_BEARING_DEPOSIT_TO_PAY' | translate}}
+                    <span class="pull-right">
+                        {{buildingSaving.saving.bonusBearingDepositToPay | amount}}
+                    </span>
+                </li>
+                <li ng-if="buildingSaving.saving.expiryDate">{{'buildingSaving.EXPIRY_DATE' | translate}}
+                    <span class="pull-right">
+                        {{buildingSaving.saving.expiryDate | date}}
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="panel-footer">
+
+        </div>
+    </div>
+</div>

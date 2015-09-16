@@ -1,0 +1,10 @@
+{
+    "card.MENU_ITEM": "Cards",
+    "card.CARD": "Card",
+    "card.OWNER": "Owner",
+    "card.EXPIRATION": "Expiry date",
+    "card.LIMIT": "Limit",
+    "card.NO_CARDS": "You do not have any card!",
+    "card.LIMIT_ATM": "Limit ATM",
+    "card.LIMIT_POS": "Limit POS"
+}

@@ -1,0 +1,13 @@
+{   "history.MENU_ITEM": "Transakce",
+    "history.ACCOUNT": "Účet",
+    "history.FROMDATE": "Od",
+    "history.TODATE": "Do",
+    "history.TAB_FROM": "Z účtu",
+    "history.TAB_TO": "Protiúčet",
+    "history.TAB_AMOUNT": "Částka",
+    "history.TAB_PAYMENTDATE": "Datum",
+    "history.TAB_NOTE": "Poznámka",
+    "history.WAIT": "Momentík...",
+    "history.NO_SHORT_HISTORY": "Nevidím žádné transakce...",
+    "history.TAB_OPERATION": "Operace"
+}

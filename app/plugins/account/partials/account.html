@@ -1,0 +1,36 @@
+<div class="col-xs-12 col-sm-6" ng-init="hideDetail = true">
+    <div class="panel"
+         ng-class="{'panel-primary': account.accountRoleType == 'OWNER', 'panel-default': account.accountRoleType != 'OWNER'}">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                <span ng-if="account.alias">{{account.alias}}</span>
+                <span ng-if="!account.alias">{{account.accountno.iban | IBANout }}</span>
+                <!--TODO add icon based on account type -->
+                <span class="glyphicon pull-right" account-icon="account" />
+                <!-- <span ng-if="" class="glyphicon glyphicon-user pull-right"></span> -->
+            </h3>
+        </div>
+        <div class="panel-body">
+            <ul class="list-unstyled">
+                <li>{{account.productI18N}}</li>
+                <li>&nbsp;<span class="pull-right">{{account.accountno.iban | IBANout }}</span></li>
+                <li ng-if="account.balance.value">
+                    &nbsp;
+                    <strong class="pull-right">{{account.balance | amount}}</strong>
+                </li>
+            </ul>
+            <div ng-if="showPlugins && !hideDetail" class="height-animated-item">
+                <account-context account="account"></account-context>
+            </div>
+
+        </div>
+        <div class="panel-footer hand" ng-click="hideDetail = !hideDetail" ng-show="showPlugins">
+                <span ng-if="!hideDetail" >
+                    <span class="glyphicon glyphicon-chevron-up"></span> {{'account.HIDE' | translate}}
+                </span>
+                <span ng-if="hideDetail" >
+                    <span class="glyphicon glyphicon-chevron-down"></span> {{'account.SHOW' | translate}}
+                </span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gustav</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="gustav/images/icon-16.png"/>
+
+    <!-- include: "type": "css", "files": "lib/**/*.css" -->
+    <!-- /include -->
+    <!-- include: "type": "css", "files": "core/**/*.css" -->
+    <!-- /include -->
+    <!-- include: "type": "css", "files": "gustav/**/*.css" -->
+    <!-- /include -->
+    <!-- include: "type": "css", "files": "plugins/**/*.css" -->
+    <!-- /include -->
+
+</head>
+<body ng-app="gustav">
+<div class="header" ng-controller="RootCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-10">
+                <div class="brand" ng-cloak>
+                    <a href=".">
+                        <span>{{profile.firstname}}</span>
+                        <span>{{profile.lastname}}</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <ul class="nav nav-side">
+                    <li class="dropdown pull-right" on-toggle="toggled(open)">
+                        <a href="" class="dropdown-toggle"><span class="glyphicon glyphicon-align-justify"></span></a>
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="m in menu" ng-class="{active: isLocation(m.url)}" class="visible-xs">
+                                <a href="" ng-click="goto(m.url)"><span ng-class="m.icon"></span>&nbsp;{{m.title |
+                                    translate}}</a>
+                            </li>
+                            <li class="divider visible-xs"></li>
+                            <li ng-if="langKey!='cs'">
+                                <a href="" ng-click="changeLanguage('cs')"><img ng-src="" class="flag flag-cz"/> <span
+                                        translate="core.BUTTON_LANG_CS"></span></a>
+                            </li>
+                            <li ng-if="langKey!='en'">
+                                <a href="" ng-click="changeLanguage('en')"><img ng-src="" class="flag flag-gb"/> <span
+                                        translate="core.BUTTON_LANG_EN"></span></a>
+                            </li>
+                            <li class="divider" ng-if="!isPluginLoaded('gustav.help')"></li>
+                            <li>
+                                <a ng-if="!isPluginLoaded('gustav.help')" href="" ng-click="loadHelpPlugin()"><span
+                                        class="glyphicon glyphicon-question-sign"></span> <span
+                                        translate="core.HELP_LOAD_MENU_ITEM"></span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!--<ul class="nav nav-tabs nav-justified visible-xs">-->
+                        <!--<li ng-repeat="m in menu" ng-show="isLocation(m.url)" ng-class="{active: isLocation(m.url)}">-->
+                            <!--<span ng-class="m.icon"></span>&nbsp;{{m.title | translate}}-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                    <ul class="nav nav-tabs nav-justified">
+                        <li ng-repeat="m in menu" ng-class="{active: isLocation(m.url), 'hidden-xs': !isLocation(m.url)}">
+                            <a href="" ng-click="goto(m.url)"><span ng-class="m.icon"></span>&nbsp;{{m.title | translate}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <div class="container">
+        <div message></div>
+
+        <div class="row">
+            <!-- Tab panes -->
+            <div class="tab-content col-xs-12">
+                <div class="tab-pane active" ui-view>
+                    <!-- ui router main view -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="footer navbar navbar-default navbar-fixed-bottom hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <span class="navbar-text pull-left"><img src="gustav/images/icon-16.png"> <strong>Gustav
+                    beta</strong> &copy; 2014 WBL team</span>
+                <span class="navbar-text pull-right hidden-xs">
+                    Icon by <a target="_blank" href="http://iconka.com/">iconka</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<!-- include: "type": "js", "files": "lib/**/*.js" -->
+<!-- /include -->
+<!-- include: "type": "js", "files": "gustav/**/*.js" -->
+<!-- /include -->
+<!-- include: "type": "js", "files": "core/**/*.js" -->
+<!-- /include -->
+<!-- include: "type": "js", "files": "plugins/**/*.js" -->
+<!-- /include -->
+<!-- include: "type": "js", "files": "*.js" -->
+<!-- /include -->
+
+</html>

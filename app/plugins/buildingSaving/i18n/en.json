@@ -1,0 +1,15 @@
+{
+    "buildingSaving.MENU_ITEM":"Building saving",
+    "buildingSaving.NO_SAVING":"No active building saving!",
+    "buildingSaving.BALANCE":"Balance",
+    "buildingSaving.CREDIT_INTEREST_RATE":"Credit interest rate",
+    "buildingSaving.TARGET_AMOUNT":"Target amount",
+    "buildingSaving.AGREE_MONTHLY_SAVINGS":"Agree monthly savings",
+    "buildingSaving.BONUS_BEARING_DEPOSIT_TO_PAY":"Bonus bearing deposit to pay",
+    "buildingSaving.EXPIRY_DATE":"Expiry date",
+    "buildingSaving.DEBIT_INTEREST_RATE":"Debit interest rate",
+    "buildingSaving.LOAN_AMOUNT":"Loan amount",
+    "buildingSaving.LOAN_INSTALLMENT":"Loan installment",
+    "buildingSaving.ADDITIONAL_SAVINGS":"Additional savings",
+    "buildingSaving.PAYMENT_INSURANCE":"Payment insurance"
+}

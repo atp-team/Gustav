@@ -1,0 +1,19 @@
+
+.mask-panel(@content) {
+    position: relative;
+    padding: 25px 0 10px;
+    margin-bottom: 30px;
+    background: #fff;
+    border-top: 10px solid @blue;
+    @media (min-width: @screen-md){
+        &:before {
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            font-family: 'Glyphicons Halflings';
+            content: @content;
+            font-size: 60px;
+            color: #e6ebef;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "node": true,
+    "browser": true,
+    "esnext": true,
+    "bitwise": true,
+    "camelcase": false,
+    "curly": true,
+    "eqeqeq": true,
+    "immed": true,
+    "latedef": true,
+    "newcap": true,
+    "noarg": true,
+    "quotmark": false,
+    "undef": true,
+    "strict": false,
+    "trailing": true,
+    "smarttabs": true,
+    "devel": true,
+    "unused": true,
+    "noempty": true,
+    "globals" : {
+        "chrome": true,
+        "angular": true,
+        "BootstrapDialog": true,
+        "$": true,
+        "moment": true
+    }
+}

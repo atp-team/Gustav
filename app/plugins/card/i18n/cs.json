@@ -1,0 +1,10 @@
+{
+    "card.MENU_ITEM": "Karty",
+    "card.CARD": "Karta",
+    "card.OWNER": "Vlastník",
+    "card.EXPIRATION": "Platnost",
+    "card.LIMIT": "Limit",
+    "card.NO_CARDS": "Nemáte žádnou kartu!",
+    "card.LIMIT_ATM": "Limit ATM",
+    "card.LIMIT_POS": "Limit POS"
+}
