@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="gustav/images/icon-128.png"/>
 
+    <style>
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+            display: none !important;
+        }
+    </style>
+
     <!-- include: "type": "css", "files": "lib/**/*.css" -->
     <!-- /include -->
     <!-- include: "type": "css", "files": "core/**/*.css" -->
@@ -21,7 +27,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-10">
-                <div class="brand" ng-cloak>
+                <div class="brand ng-cloak" ng-cloak>
                     <a href=".">
                         <span>{{profile.firstname}}</span>
                         <span>{{profile.lastname}}</span>
@@ -61,7 +67,7 @@
     <div class="navbar navbar-default">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-12  ng-cloak"  ng-cloak>
                     <!--<ul class="nav nav-tabs nav-justified visible-xs">-->
                         <!--<li ng-repeat="m in menu" ng-show="isLocation(m.url)" ng-class="{active: isLocation(m.url)}">-->
                             <!--<span ng-class="m.icon"></span>&nbsp;{{m.title | translate}}-->
